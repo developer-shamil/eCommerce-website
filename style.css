@@ -31,7 +31,7 @@
     background: #2a2a2e;
   }
 
-  .featured .row {
+  .products .row {
     background: #2a2a2e;
   }
 
@@ -186,6 +186,7 @@ section{
   cursor: pointer;
   background:#fff;
   padding:.8rem 3rem;
+  margin-left: -40%;
 }
 
 .btn{
@@ -427,7 +428,7 @@ header .navbar a:hover{
   padding:1rem 0;
 }
 
-.featured .row{
+.products .row{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
@@ -437,71 +438,74 @@ header .navbar a:hover{
   padding:2rem;
   align-items: center;
   margin:1.5rem 0;
+  width: 122%;
+  margin-left: -11%;
+  
 }
 
-.featured .row .content{
+.products .row .content{
   flex:1 1 40rem;
 }
 
-.featured .row .image-container{
+.products .row .image-container{
   display:flex;
   gap:1.5rem;
   align-items: center;
   flex:1 1 50rem;
 }
 
-.featured .row .image-container .small-image{
+.products .row .image-container .small-image{
   width:20%;
 }
 
-.featured .row .image-container .big-image{
+.products .row .image-container .big-image{
   width:60%;
   padding:1rem;
 }
 
-.featured .row .image-container .small-image img{
+.products .row .image-container .small-image img{
   width:100%;
   padding:1rem;
   border:.1rem solid rgba(0,0,0,.3);
   cursor: pointer;
 }
 
-.featured .row .image-container .small-image img:hover{
+.products .row .image-container .small-image img:hover{
   background:#ccc;
 }
 
-.featured .row .image-container .big-image img{
+.products .row .image-container .big-image img{
   width:100%;
 }
 
-.featured .row .image-container .big-image img:hover{
+.products .row .image-container .big-image img:hover{
   transform: scale(1.05);
 }
 
-.featured .row .content h3{
+.products .row .content h3{
   font-size: 2.5rem;
   color:var(--black);
 }
 
-.featured .row .content .stars i{
+.products .row .content .stars i{
   font-size: 1.7rem;
   color:var(--orange);
   padding:.5rem 0;
 }
 
-.featured .row .content p{
+.products .row .content p{
   font-size: 1.5rem;
   color:#666;
   padding:1rem 0;
 }
 
-.featured .row .content .price{
+.products .row .content .price{
   font-size: 2.5rem;
   color:var(--black);
   font-weight: bolder;
 }
 
-.featured .row .content .price span{
+.products .row .content .price span{
   font-size: 1.5rem;
   color:var(--orange);
   text-decoration: line-through;
@@ -518,6 +522,8 @@ header .navbar a:hover{
   border-radius: .5rem;
   background:#f9f9f9;
   padding:2rem;
+  width: 122%;
+  margin-left: -11%;
 }
 
 .newsletter .content h3{
@@ -539,23 +545,25 @@ header .navbar a:hover{
 }
 
 .mail-box {
-  width:100%;
+  width:180%;
   font-size: 1.7rem;
   text-transform: none;
   color: black;
   padding:1rem;
   border:.2rem solid var(--black);
   margin-top: 2rem;
+  margin-left: -40%;
 }
 
 .newsletter .content form .box{
-  width:100%;
+  width:180%;
   font-size: 1.7rem;
   text-transform: none;
   color: black;
   padding:1rem;
   border:.2rem solid var(--black);
   margin-top: 2rem;
+  margin-left: -40%;
 }
 
 .newsletter .content form .btn{
@@ -570,6 +578,8 @@ header .navbar a:hover{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
+  width: 122%;
+  margin-left: -11%;
 }
 
 .footer .box-container .box{
@@ -723,13 +733,37 @@ header .navbar a:hover{
     font-size: 10px;
   }
 
-  .fav-btn {
-    margin-left: 2.5rem;
-    font-size: 10px;
+  .products .row {
+    width: 110%;
+    margin-left: -5%;
   }
 
-  .featured .row .image-container .small-image {
+  .products .row .image-container .small-image {
     width: 26%;
+  }
+
+  .newsletter .content {
+    width: 110%;
+    margin-left: -5%;
+  }
+
+  .mail-box {
+    margin-left: 1%;
+    width: 100%;
+  }
+
+  .newsletter .content form .box {
+    width: 100%;
+    margin-left: 1%;
+  }
+
+  .send-btn {
+    margin-left: 1%;
+  }
+
+  .footer .box-container {
+    width: 110%;
+    margin-left: -5%;
   }
 
 }
