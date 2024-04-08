@@ -552,7 +552,7 @@ header .navbar a:hover{
   width:100%;
   font-size: 1.7rem;
   text-transform: none;
-  color: black);
+  color: black;
   padding:1rem;
   border:.2rem solid var(--black);
   margin-top: 2rem;
