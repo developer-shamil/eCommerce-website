@@ -43,6 +43,10 @@
     background: #2a2a2e;
   }
 
+  .mail-box {
+    background: #2a2a2e;
+  }
+
   .newsletter .content .btn {
     background: #303038;
     color: #5e5ead;
@@ -172,7 +176,7 @@ section{
 }
 
 .send-btn{
-  display: inline-block;
+  display: flex;
   margin-top: 2rem;
   border-radius: .5rem;
   border:.2rem solid var(--black);
@@ -531,17 +535,26 @@ header .navbar a:hover{
 .newsletter .content form{
   margin:1rem auto;
   max-width: 50rem;
-  display: flex;
+  display: flexbox;
+}
+
+.mail-box {
+  width:100%;
+  font-size: 1.7rem;
+  text-transform: none;
+  color: black;
+  padding:1rem;
+  border:.2rem solid var(--black);
+  margin-top: 2rem;
 }
 
 .newsletter .content form .box{
   width:100%;
   font-size: 1.7rem;
   text-transform: none;
-  color: var(--orange);
+  color: black);
   padding:1rem;
   border:.2rem solid var(--black);
-  border-right: none;
   margin-top: 2rem;
 }
 
