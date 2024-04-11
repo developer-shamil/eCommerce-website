@@ -27,12 +27,24 @@
     background: var(--blue);
   }
 
+  .home .slide-container .slide .content p {
+    color: #999;
+  }
+
   .service .box-container {
     background: #2a2a2e;
   }
 
+  .service .box-container .box p {
+    color: #999;
+  }
+
   .products .row {
     background: #2a2a2e;
+  }
+
+  .products .row .content p {
+    color: #999;
   }
 
   .newsletter .content {
@@ -52,8 +64,24 @@
     color: #5e5ead;
   }
 
+  .newsletter .content form .box {
+    color: #fff;
+  }
+
+  .newsletter .content form .mail-box {
+    color: #fff;
+  }
+
+  .newsletter .content p {
+    color: #999;
+  }
+
   .footer .box-container {
     background: #2a2a2e;  
+  }
+
+  .footer .box-container .box a {
+    color: #999;
   }
 
   .logo {
@@ -249,6 +277,33 @@ header .navbar a:hover{
 
 .navbar a i {
   padding-right: 15px;
+}
+
+.wa-contact {
+  width: 50px;
+  height: 50px;
+  margin-left: 93%;
+  margin-top: 43%;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.wa-contact:hover {
+  scale: 1.2;
+}
+
+.cart {
+  z-index: 2;
+  position: fixed;
+  margin-top: 38%;
+  width: 66px;
+  height: 66px;
+  margin-left: 92.5%;
+}
+
+.cart:hover {
+  scale: 1.2;
 }
 
 .home{
@@ -657,6 +712,10 @@ header .navbar a:hover{
       background: #303038;
     }
 
+    .logo:hover {
+      color: var(--blue);
+    }
+
   }
 
 
@@ -764,6 +823,28 @@ header .navbar a:hover{
   .footer .box-container {
     width: 110%;
     margin-left: -5%;
+  }
+
+  .wa-contact {
+    margin-left: 81%;
+    margin-top: 170%;
+  }
+
+  .cart {
+    margin-left: 80%;
+    margin-top: 150%;
+  }
+
+  .wa-contact:hover {
+    scale: 1;
+  }
+
+  .cart:hover {
+    scale: 1;
+  }
+
+  header .logo:hover {
+    color: var(--blue);
   }
 
 }
