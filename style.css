@@ -113,27 +113,19 @@
 
   .btn:hover {
     scale: 1.2;
-    background: blue;
-    color: #fff;
-  }
-
-  .fav-btn {
-    background: blue;
-    border: 0px;
-    box-shadow: 0 0 5px blue, 0 0 15px blue, 0 0 25px blue, 0 0 100px blue;
-    color: rgb(171, 170, 170);
-    margin-top: 3rem;
-    margin-left: 3.5rem;
-  }
-
-  .fav-btn:hover {
-    scale: 1.2;
-    background: blue;
+    background: var(--orange);
+    box-shadow: 0 0 5px var(--orange), 0 0 15px var(--orange), 0 0 25px var(--orange), 0 0 100px var(--orange);
     color: #fff;
   }
 
   .send-btn {
     background: #303038;
+  }
+
+  .send-btn:hover {
+    color: #fff;
+    scale: 1.2;
+    background: var(--orange);
   }
 
 }
@@ -608,6 +600,7 @@ header .navbar a:hover{
   border:.2rem solid var(--black);
   margin-top: 2rem;
   margin-left: -40%;
+  border-radius: .5rem;
 }
 
 .newsletter .content form .box{
@@ -619,6 +612,7 @@ header .navbar a:hover{
   border:.2rem solid var(--black);
   margin-top: 2rem;
   margin-left: -40%;
+  border-radius: .5rem;
 }
 
 .newsletter .content form .btn{
@@ -827,12 +821,12 @@ header .navbar a:hover{
 
   .wa-contact {
     margin-left: 81%;
-    margin-top: 170%;
+    margin-top: 150%;
   }
 
   .cart {
     margin-left: 80%;
-    margin-top: 150%;
+    margin-top: 130%;
   }
 
   .wa-contact:hover {
