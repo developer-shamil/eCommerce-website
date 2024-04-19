@@ -83,3 +83,15 @@ btn.onclick = function(){
     btnText.innerHTML = "Dark";
   }
 }
+
+// when the user loses the focus
+
+window.addEventListener("blur", () => {
+  document.title = "Come Again";
+});
+
+// when the user back to the focus in your tab
+
+window.addEventListener("focus", () => {
+  document.title = "Irshad Ali";
+});
