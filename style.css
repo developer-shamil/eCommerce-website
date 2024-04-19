@@ -7,6 +7,7 @@
   --text-color: #555;
   --title-color: #000;
   --blue:#2c2c54;
+  --light-blue:#444488;
 }
 
 .dark-theme {
@@ -14,13 +15,11 @@
   --text-color: #999;
   --title-color: #fff;
 
-  .navbar {
-    background: var(--orange);
-  }
 
-  #header {
-    background: #ff9f1a;
-    box-shadow: 0 0 5px #ff9f1a, 0 0 15px #ff9f1a, 0 0 25px #ff9f1a, 0 0 100px #ff9f1a;
+
+  header {
+    background: transparent;
+    backdrop-filter: blur(15px);
   }
 
   .toggle-btn {
@@ -91,15 +90,12 @@
   .logo:hover {
     color: #fff;
   }
+
   .navbar a { 
     color: #2c2c54;
   }
 
   .navbar a:hover {
-    color: #fff;
-  }
-
-  header .icons a:hover {
     color: #fff;
   }
 
@@ -126,6 +122,14 @@
     color: #fff;
     scale: 1.2;
     background: var(--orange);
+  }
+
+  header .logo span {
+    color: #fff;
+  }
+
+  header .navbar a {
+    color: var(--light-blue);
   }
 
 }
@@ -209,6 +213,12 @@ section{
   margin-left: -40%;
 }
 
+.send-btn:hover {
+  background-color: #949497;
+  color: #fff;
+  scale: 1.2;
+}
+
 .btn{
   display: inline-block;
   margin-top: 2rem;
@@ -231,7 +241,6 @@ header{
   position: fixed;
   top:0; left:0; right:0;
   z-index: 1000;
-  background:#fff;
   padding:2rem 9%;
   display: flex;
   align-items: center;
@@ -239,23 +248,43 @@ header{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
 header .logo{
   font-size: 2.5rem;
-  color:var(--blue);
+  color:var(--light-blue);
+  margin:0 1rem;
+}
+
+header .logo span {
+  color: var(--orange);
 }
 
 header .logo:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 header .navbar a{
   font-size: 1.7rem;
-  color:var(--blue);
+  color:var(--light-blue);
   margin:0 1rem;
 }
 
 header .navbar a:hover{
   color:var(--orange);
+}
+header a {
+  color: var(--light-blue);
 }
 
 #menu-bar{
@@ -648,7 +677,19 @@ header .navbar a:hover{
   display: block;
 }
 
+.footer .box-container .box span{
+  color:#666;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+
 .footer .box-container .box a:hover{
+  color:var(--orange);
+}
+
+.footer .box-container .box span:hover{
   color:var(--orange);
 }
 
@@ -694,8 +735,38 @@ header .navbar a:hover{
 
 
   .dark-theme {
+
+    #navbar {
+      background: transparent;
+      backdrop-filter: blur(15px);
+    }
+
+    .service .box-container {
+      background: #2a2a2e;
+    }
+
+    .products .row {
+      background: #2a2a2e;
+    }
+
+    .newsletter .content {
+      background: #2a2a2e;
+    }
+
+    .newsletter .content .box {
+      background: #2a2a2e;
+    }
+
+    .mail-box {
+      background: #2a2a2e;
+    }
+
+    .footer .box-container {
+      background: #2a2a2e;  
+    }
+
     .btn {
-      background: blue;
+    background: blue;
     border: 0px;
     box-shadow: 0 0 5px blue, 0 0 15px blue, 0 0 25px blue, 0 0 100px blue;
     color: rgb(171, 170, 170);
@@ -706,8 +777,8 @@ header .navbar a:hover{
       background: #303038;
     }
 
-    .logo:hover {
-      color: var(--blue);
+    .logo span {
+      color: #fff;
     }
 
   }
@@ -715,14 +786,16 @@ header .navbar a:hover{
 
   #menu-bar{
     display: block;
+    color: var(--light-blue);
   }
 
-  header .navbar{
+  .navbar{
     position: absolute;
     top: 100%; left:-120%;
     width:50%;
-    background: #fff;
     height: 1000%;
+    background: transparent;
+    backdrop-filter: blur(15px);
   }
 
   header .navbar.active{
@@ -734,6 +807,7 @@ header .navbar a:hover{
     margin:1.5rem;
     display: block;
     text-align: center;
+    color: var(--light-blue);
   }
 
   .navbar a {
@@ -746,8 +820,16 @@ header .navbar a:hover{
   }
 
   header .logo {
-    margin-left: -150px;
-    font-size: 3.5rem;
+    margin-left: -50px;
+    font-size: 3rem;
+  }
+
+  header .logo:hover {
+    color: var(--blue);
+  }
+
+  header a {
+    color: var(--light-blue);
   }
 
   .toggle-btn {
@@ -835,10 +917,6 @@ header .navbar a:hover{
 
   .cart:hover {
     scale: 1;
-  }
-
-  header .logo:hover {
-    color: var(--blue);
   }
 
 }
