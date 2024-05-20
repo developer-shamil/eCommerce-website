@@ -562,6 +562,10 @@ header a {
   transform: scale(1.05);
 }
 
+#product-image-1 {
+  height: 100px;
+}
+
 .products .row .content h3{
   font-size: 2.5rem;
   color:var(--black);
